@@ -1,4 +1,4 @@
-/* Reset and Base Styles */
+
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +16,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px 100px;
-  background-image: url('images/navbar-bg.jpg'); /* Use your own background image */
+  background-image: url('images/navbar-bg.jpg'); 
   background-size: cover;
   background-position: center;
   border-radius: 8px;
@@ -419,7 +419,7 @@ body {
   flex-wrap: wrap;
 }
 
-/* Left side 2 cards stacked */
+/* Left side 2 cards  */
 .left-deals {
   display: flex;
   flex-direction: column;
