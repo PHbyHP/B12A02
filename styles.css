@@ -360,3 +360,295 @@ body {
 
 
 
+
+
+
+
+
+/* Wrapper padding  */
+.container {
+  padding: 0 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Headings style */
+.latest-deals-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.latest-deals-section h2 .highlight {
+  color: #f97316;
+  font-weight: bold;
+}
+.latest-deals-section p {
+  text-align: center;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+/* Deals layout */
+.deals-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Left side 2 cards stacked */
+.left-deals {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+}
+
+/* Right side large card */
+.large-card {
+  flex: 2;
+  min-height: 100%;
+}
+
+/* Deal cards */
+.deal-card {
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.deal-card.large-card {
+  height: 100%;
+  min-height: 380px;
+}
+
+/* Center content */
+.deal-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.deal-info h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+}
+
+.deal-info button {
+  background-color: #f97316;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.deal-info button:hover {
+  background-color: #e65c00;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .deals-grid {
+    flex-direction: column;
+  }
+
+  .left-deals,
+  .large-card {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+.join-section {
+  background-image: url('images/news-letter-bg.png');
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px;
+  position: relative;
+  text-align: center;
+  color: white;
+  margin-top: 100px;
+}
+
+.join-overlay {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.join-section h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.join-section h2 .colorful {
+  color: #f97316; /* orange */
+}
+
+.join-form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.join-form input[type="email"] {
+  padding: 12px 15px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  width: 60%;
+  max-width: 400px;
+  outline: none;
+}
+
+.join-form button {
+  background-color: #f97316;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 0 4px 4px 0;
+}
+
+.join-form button:hover {
+  background-color: #e65c00;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .join-form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .join-form input[type="email"],
+  .join-form button {
+    width: 100%;
+    border-radius: 4px;
+    margin: 5px 0;
+  }
+}
+
+
+
+
+/* Footer Section */
+.footer-section {
+  background-color: #f5f7fe;
+  padding: 60px 0;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px; /* ensures left/right padding like other sections */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+/* Logo & Text */
+.footer-left {
+  flex: 1 1 250px;
+}
+
+.footer-logo {
+  width: 100px;
+  margin-bottom: 15px;
+}
+
+.footer-left p {
+  font-size: 15px;
+  color: #444;
+  line-height: 1.6;
+  max-width: 250px;
+}
+
+/* Links */
+.footer-links {
+  display: flex;
+  gap: 60px;
+  flex: 2 1 400px;
+  justify-content: center;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+  text-decoration: none;
+  color: #444;
+  font-size: 15px;
+  transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+  color: #f97316;
+}
+
+/* Social Icons */
+.footer-social {
+  flex: 1 1 150px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+.footer-social img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+.footer-social img:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-left p {
+    max-width: none;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin: 20px 0;
+  }
+
+  .footer-social {
+    justify-content: center;
+  }
+}
